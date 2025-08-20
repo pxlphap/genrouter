@@ -423,6 +423,7 @@
     border-radius: 50%;
     overflow: hidden;
     width: 220px;
+    min-width: 220px;
     aspect-ratio: 1/1;
 }
 
@@ -483,4 +484,144 @@
 
 .section-more__item.active .section-more__item-content {
     opacity: 1;
+}
+
+/* Section Shocked */
+.section-shocked__title {
+    text-align: center;
+    color: #2A2B32;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.section-shocked__desc {
+    text-align: center;
+    color: #2A2B32;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    margin: 0 0 40px;
+}
+
+/* Table Pricing */
+.table-pricing {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    overflow: auto;
+}
+
+.table-pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    min-width: 1000px;
+
+}
+
+.table-pricing table thead tr th {
+    border: 1px solid #E0E0E0;
+    padding: 24px;
+    color: #3C67FF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.table-pricing table tbody tr td {
+    border: 1px solid #E0E0E0;
+    padding: 24px;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    color: #2A2B32;
+
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 13.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.table-pricing table tbody tr.table-pricing__item-gen td span {
+    color: #3C67FF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.table-pricing table tbody tr.table-pricing__item-regular td span {
+    color: #F53E3E;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.table-pricing table tbody tr td:nth-child(3) {
+    border-right: none;
+}
+
+.table-pricing table tbody tr td:nth-child(4) {
+    border-left: none;
+}
+
+.table-pricing table tbody tr td:first-child {
+    text-align: left;
+    vertical-align: baseline;
+    color: #666;
+
+    font-family: "DM Sans";
+    font-size: 15.6px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Support List */
+.support-list {
+    width: 100%;
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #3A6FFF;
+}
+
+.support-list__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+    border-radius: 1000px;
+    background: linear-gradient(90deg, #3A6FFF 16.02%, #2E95FF 67.31%, #9CB3FF 100%);
+    padding: 16px 40px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.support-list__list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 24px 40px;
+    list-style: none;
 }

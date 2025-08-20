@@ -1,4 +1,5 @@
 @import "grid.css";
+@import "reset.css";
 @import "mixin.css";
 @import "style-main.css";
 @import "responsive.css";
