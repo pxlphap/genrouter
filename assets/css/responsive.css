@@ -37,6 +37,14 @@
         height: auto;
     }
 
+    .section-more__item-content-img {
+        position: unset;
+    }
+
+    .section-more__item-content-inner {
+        position: unset;
+    }
+
     .section-more__item-title {
         writing-mode: unset;
         top: 50%;
