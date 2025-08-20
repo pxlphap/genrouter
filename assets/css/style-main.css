@@ -1061,7 +1061,7 @@
     border-radius: 8px;
     border: 1px solid #E0E0E0;
     background: #FFF;
-    color: #727272;
+    color: #1D1D1F;
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
@@ -1069,14 +1069,17 @@
     line-height: 24px;
     /* 171.429% */
     letter-spacing: -0.14px;
+    transition: all 0.3s ease-in-out;
+    height: 48px;
 }
+
 
 .form-input textarea {
     padding: 11px 16px;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
     background: #FFF;
-    color: #727272;
+    color: #1D1D1F;
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
@@ -1087,6 +1090,49 @@
     min-height: 86px;
     resize: vertical;
     width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input__item-wrapper {
+    position: relative;
+    height: 48px;
+}
+
+.form-input__item-wrapper-textarea {
+    height: 86px;
+}
+
+.form-input__item-wrapper label {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    transform: translateY(0);
+    z-index: 2;
+    color: #727272;
+
+}
+
+.form-input__item-wrapper-textarea label {
+    top: 12px;
+    transform: translateY(0);
+}
+
+
+.form-input__item-wrapper.active label {
+    top: 8px;
+    font-size: 11px;
+}
+
+.form-input__item-wrapper.active input {
+    padding: 20px 16px 6px;
+}
+
+.form-input__item-wrapper.active textarea {
+    padding: 20px 16px 6px;
+}
+
+.form-input__item-wrapper.active .nice-select {
+    padding: 20px 16px 6px;
 }
 
 .form-input .nice-select {
@@ -1094,7 +1140,7 @@
     border-radius: 8px;
     border: 1px solid #E0E0E0;
     background: #FFF;
-    color: #727272;
+    color: #1D1D1F;
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
@@ -1123,7 +1169,6 @@
 .form-submit {
     display: flex;
     height: 48px;
-    padding: 12px 24px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1141,6 +1186,7 @@
     line-height: normal;
     letter-spacing: -0.16px;
     cursor: pointer;
+    line-height: 48px;
 }
 
 .form-input__error {
@@ -1152,4 +1198,10 @@
     line-height: normal;
     letter-spacing: -0.11px;
     margin-top: 4px;
+    display: none;
+
+}
+
+.form-input__error.active {
+    display: block;
 }

@@ -96,149 +96,64 @@
                         <div class="form-title">Reseller Application</div>
                         <div class="form-input">
                             <div class="form-input__item">
-                                <input type="text" placeholder="Full name*">
-                                <span class="form-input__error">Full name is required</span>
+                                <div class="form-input__item-wrapper active">
+                                    <label for="full-name">Full name*</label>
+                                    <input type="text" id="full-name">
+                                </div>
+                                <span class="form-input__error active">Full name is required</span>
                             </div>
                             <div class="form-input__item">
-                                <input type="text" placeholder="Email*">
+                                <div class="form-input__item-wrapper">
+                                    <label for="email">Email*</label>
+                                    <input type="text" id="email">
+                                </div>
                                 <span class="form-input__error">Email is required</span>
                             </div>
                             <div class="form-input__item">
-                                <input type="text" placeholder="Company/Organization*">
+                                <div class="form-input__item-wrapper">
+                                    <label for="company">Company/Organization*</label>
+                                    <input type="text" id="company">
+                                </div>
                                 <span class="form-input__error">Company/Organization is required</span>
                             </div>
                             <div class="form-input__item">
-                                <select name="s1" id="s1">
-                                    <option value="">Company Sales Country/Region*</option>
-                                    <option value="">Company Sales Country/Region 1</option>
-                                    <option value="">Company Sales Country/Region 2</option>
-                                    <option value="">Company Sales Country/Region 3</option>
-                                    <option value="">Company Sales Country/Region 4</option>
-                                </select>
+                                <div class="form-input__item-wrapper active">
+                                    <label for="country">Company Sales Country/Region*</label>
+                                    <select name="country" id="country">
+                                        <option value=""></option>
+                                        <option value="">Company Sales Country/Region 2</option>
+                                        <option value="">Company Sales Country/Region 3</option>
+                                        <option value="">Company Sales Country/Region 4</option>
+                                    </select>
+                                </div>
                                 <span class="form-input__error">Company Sales Country/Region is required</span>
                             </div>
                             <div class="form-input__item">
-                                <select name="s2" id="s2">
-                                    <option value="">Intended Order Model (GenRouter H3000/MiniPC)*</option>
-                                    <option value="">Intended Order Model 1</option>
-                                    <option value="">Intended Order Model 2</option>
-                                    <option value="">Intended Order Model 3</option>
-                                    <option value="">Intended Order Model 4</option>
-                                </select>
+                                <div class="form-input__item-wrapper">
+                                    <label for="model">Intended Order Model (GenRouter H3000/MiniPC)*</label>
+                                    <select name="model" id="model">
+                                        <option value=""></option>
+                                        <option value="">Intended Order Model 2</option>
+                                        <option value="">Intended Order Model 3</option>
+                                        <option value="">Intended Order Model 4</option>
+                                    </select>
+                                </div>
                                 <span class="form-input__error">Intended Order Model is required</span>
                             </div>
                             <div class="form-input__item">
-                                <input type="text" placeholder="Intended Order Quantity*">
+                                <div class="form-input__item-wrapper">
+                                    <label for="quantity">Intended Order Quantity*</label>
+                                    <input type="text" id="quantity">
+                                </div>
                                 <span class="form-input__error">Intended Order Quantity is required</span>
                             </div>
                             <div class="form-input__item">
-                                <textarea type="text" placeholder="Please fill in the company profile"></textarea>
+                                <div class="form-input__item-wrapper active form-input__item-wrapper-textarea">
+                                    <label for="company-profile">Please fill in the company profile</label>
+                                    <textarea name="company-profile" id="company-profile"></textarea>
+                                </div>
                                 <span class="form-input__error">Company profile is required</span>
                             </div>
-                        </div>
-                        <button class="form-submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="section-form__left">
-                        <h1 class="section-form__title">
-                            Unlock your business potential with us
-                        </h1>
-                        <ul class="section-form__list">
-                            <li class="section-form__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"
-                                    fill="none">
-                                    <path d="M16 1L6 11L1 6" stroke="#3C67FF" stroke-width="1.7" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="section-form__item-content">
-                                    <span class="section-form__item-title">
-                                        High Revenue Sharing
-                                    </span>
-                                    <span class="section-form__item-desc">
-                                        Enjoy up to 50% profit sharing as a valued affiliate.
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="section-form__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"
-                                    fill="none">
-                                    <path d="M16 1L6 11L1 6" stroke="#3C67FF" stroke-width="1.7" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="section-form__item-content">
-                                    <span class="section-form__item-title">
-                                        Supportive Partner Manager
-                                    </span>
-                                    <span class="section-form__item-desc">
-                                        Receive personalized assistance from a dedicated manager.
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="section-form__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"
-                                    fill="none">
-                                    <path d="M16 1L6 11L1 6" stroke="#3C67FF" stroke-width="1.7" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="section-form__item-content">
-                                    <span class="section-form__item-title">
-                                        Early Access Privileges
-                                    </span>
-                                    <span class="section-form__item-desc">
-                                        Stay ahead with exclusive previews of new features.
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="section-form__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"
-                                    fill="none">
-                                    <path d="M16 1L6 11L1 6" stroke="#3C67FF" stroke-width="1.7" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="section-form__item-content">
-                                    <span class="section-form__item-title">
-                                        Expert Training Materials
-                                    </span>
-                                    <span class="section-form__item-desc">
-                                        Grow your exposure using our best practice resources.
-                                    </span>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="section-form__overlay"></div>
-                    <form action="" class="section-form__form">
-                        <div class="form-title">Reseller Application</div>
-                        <div class="form-input">
-                            <input type="text" placeholder="Full name*">
-                            <input type="text" placeholder="Email*">
-                            <input type="text" placeholder="Company/Organization*">
-                            <select name="s1" id="s1">
-                                <option value="">Company Sales Country/Region*</option>
-                                <option value="">Company Sales Country/Region 1</option>
-                                <option value="">Company Sales Country/Region 2</option>
-                                <option value="">Company Sales Country/Region 3</option>
-                                <option value="">Company Sales Country/Region 4</option>
-                            </select>
-                            <select name="s2" id="s2">
-                                <option value="">Intended Order Model (GenRouter H3000/MiniPC)*</option>
-                                <option value="">Intended Order Model 1</option>
-                                <option value="">Intended Order Model 2</option>
-                                <option value="">Intended Order Model 3</option>
-                                <option value="">Intended Order Model 4</option>
-                            </select>
-                            <input type="text" placeholder="Intended Order Quantity*">
-                            <textarea type="text" placeholder="Please fill in the company profile"></textarea>
                         </div>
                         <button class="form-submit">Submit</button>
                     </form>
