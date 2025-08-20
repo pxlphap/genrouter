@@ -18,6 +18,22 @@
     }
 }
 
+@keyframes blinkZoom2 {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    67% {
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+}
+
 @keyframes floatY {
 
     0% {

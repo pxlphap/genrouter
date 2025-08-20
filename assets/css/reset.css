@@ -12,3 +12,32 @@ body {
 .section {
     margin-top: 100px;
 }
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    height: 48px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    color: #FFF;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.16px;
+    width: fit-content;
+}
+
+.btn-primary {
+    border: 1px solid #0636CE;
+    background: #3C67FF;
+    box-shadow: 0 -4px 2px 0 rgba(255, 255, 255, 0.16) inset;
+}

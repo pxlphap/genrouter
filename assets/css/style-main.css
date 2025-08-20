@@ -16,6 +16,29 @@
     max-width: 500px;
 }
 
+
+/* Section Shocked */
+.section-title {
+    text-align: center;
+    color: #2A2B32;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #2A2B32;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    margin: 0 0 40px;
+}
+
 /* Circle*/
 
 .circle-wrap {
@@ -370,6 +393,7 @@
     cursor: pointer;
     flex: 1;
     transition: flex-grow 0.4s ease, background-color 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
 }
 
 .section-more__item-inner {
@@ -417,6 +441,7 @@
     align-items: end;
     gap: 16px;
     height: 100%;
+    position: relative;
 }
 
 .section-more__item-content-img {
@@ -425,6 +450,9 @@
     width: 220px;
     min-width: 220px;
     aspect-ratio: 1/1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 
 .section-more__item-content-img img {
@@ -435,6 +463,12 @@
 
 .section-more__item-content-inner {
     width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    min-width: 500px;
+    overflow: hidden;
 }
 
 .section-more__item-content-title {
@@ -624,4 +658,117 @@
     grid-template-columns: repeat(10, 1fr);
     gap: 24px 40px;
     list-style: none;
+}
+
+/* Section WCG */
+.section-wcg__circle {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    width: 743px;
+    height: 504px;
+}
+
+.section-wcg__circle-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.section-wcg__circle-item-1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3C67FF;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05), -2px 4px 8px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: blinkZoom2 10s infinite;
+}
+
+.section-wcg__circle-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05), -2px 4px 8px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: blinkZoom 10s infinite;
+}
+
+.section-wcg__circle-icon-1 {
+    top: 55%;
+    left: 33%;
+    animation-delay: 1s;
+}
+
+.section-wcg__circle-icon-2 {
+    top: 42%;
+    left: 77%;
+    animation-delay: 3s;
+}
+
+.section-wcg__circle-icon-3 {
+    top: 61%;
+    left: 8%;
+    animation-delay: 7s;
+}
+
+/* Section BAP */
+.section-bap {
+    padding: 180px 0 63px
+}
+
+.section-bap__left {
+    max-width: 500px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.section-bap__left-title {
+    color: #1D1D1B;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+.section-bap__left-desc {
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: -0.16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.section-bap__right {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.section-bap__right-img-1 {
+    position: absolute;
+    top: 90px;
 }
