@@ -5,5 +5,10 @@
       $(this).siblings().removeClass("active");
       $(this).toggleClass("active");
     });
+
+    // nice select
+    $("select").each(function () {
+      $(this).niceSelect();
+    });
   });
 })(jQuery);

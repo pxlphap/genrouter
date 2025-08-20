@@ -932,3 +932,224 @@
     /* 24px */
     letter-spacing: -0.16px;
 }
+
+
+/* Section form */
+.section-form {
+    background-color: #FCFDFE;
+    padding: 80px 0;
+}
+
+.section-form__left {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 24px;
+}
+
+.section-form__title {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    margin: 24px 0 32px;
+}
+
+.section-form__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-form__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.section-form__item svg {
+    margin-top: 7px;
+}
+
+.section-form__item-content {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
+
+.section-form__item-title {
+    color: #2A2B32;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.16px;
+}
+
+.section-form__item-desc {
+    color: #2A2B32;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.16px;
+}
+
+/* Form */
+
+.section-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 16px;
+    background: #FFF;
+    z-index: 1;
+    position: relative;
+}
+
+.section-form__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 509px;
+    height: 488px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    background: radial-gradient(50% 50% at 50% 50%, #E8F0FC 0%, #FCFDFE 100%);
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.form-title {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    z-index: 1;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-input__item {
+    width: 100%;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: -0.14px;
+}
+
+.form-input textarea {
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: -0.14px;
+    min-height: 86px;
+    resize: vertical;
+    width: 100%;
+}
+
+.form-input .nice-select {
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    height: 48px;
+    /* 171.429% */
+    letter-spacing: -0.14px;
+    width: 100%;
+}
+
+.form-input .nice-select::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/arrow-down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.form-submit {
+    display: flex;
+    height: 48px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid #0636CE;
+    background: #3C67FF;
+    box-shadow: 0 -4px 2px 0 rgba(255, 255, 255, 0.16) inset;
+    color: #FFF;
+    font-feature-settings: 'calt' off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.16px;
+    cursor: pointer;
+}
+
+.form-input__error {
+    color: #F00;
+    font-family: "DM Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    margin-top: 4px;
+}
