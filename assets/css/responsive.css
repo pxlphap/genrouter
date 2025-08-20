@@ -25,6 +25,10 @@
         grid-template-columns: repeat(7, 1fr);
         gap: 16px 24px;
     }
+
+    .section-more__item-content-inner {
+        min-width: 300px;
+    }
 }
 
 @media screen and (max-width: 768px) {

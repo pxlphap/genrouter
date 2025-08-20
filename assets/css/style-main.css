@@ -317,6 +317,7 @@
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    animation: blinkZoom 4s infinite;
 }
 
 .circle-box__item img {
@@ -334,41 +335,49 @@
 .circle-box__item-1 {
     top: 24%;
     left: 2%;
+    animation-delay: 1s;
 }
 
 .circle-box__item-2 {
     top: 16%;
     left: 22%;
+    animation-delay: 2s;
 }
 
 .circle-box__item-3 {
     top: 39%;
     left: 18%;
+    animation-delay: 3s;
 }
 
 .circle-box__item-4 {
     top: -2%;
     left: 54%;
+    animation-delay: 1s;
 }
 
 .circle-box__item-5 {
     top: 29%;
     left: 55%;
+    animation-delay: 2s;
 }
 
 .circle-box__item-6 {
     top: 11%;
     left: 65%;
+    animation-delay: 3s;
 }
 
 .circle-box__item-7 {
     top: 32%;
     left: 73%;
+    animation-delay: 1s;
 }
 
 .circle-box__item-8 {
     top: 22%;
     left: 90%;
+    animation-delay: 2s;
 }
 
 /* Section More List*/
