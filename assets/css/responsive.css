@@ -154,6 +154,14 @@
     .support-list__list {
         grid-template-columns: repeat(5, 1fr);
     }
+
+    .section-tacl__content-item-2,
+    .section-tacl__content-item-3,
+    .section-tacl__content-item-4,
+    .section-tacl__content-item-5 {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
