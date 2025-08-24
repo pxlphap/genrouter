@@ -5,6 +5,20 @@
       $(this).toggleClass("active");
     });
 
+    $(document).on("click", ".section-outstanding__tab-item", function () {
+      let idx = $(this).attr("tab-id");
+      $(this).siblings().removeClass("active");
+      $(this).toggleClass("active");
+      $(this)
+        .closest(".section-outstanding")
+        .find(".section-outstanding__tab-content-item")
+        .removeClass("active");
+      $(this)
+        .closest(".section-outstanding")
+        .find(".section-outstanding__tab-content-item[tab-id=" + idx + "]")
+        .addClass("active");
+    });
+
     const $form = $(".section-form__form");
 
     function isFilled($field) {
