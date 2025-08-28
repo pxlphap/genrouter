@@ -23,14 +23,19 @@
 
     function isFilled($field) {
       if ($field.is("select")) {
-        return $field.prop("selectedIndex") > 0;
+        const selectedIndex = $field.prop("selectedIndex");
+        const selectedText = $.trim($field.find("option:selected").text());
+        return selectedIndex > 0 && selectedText !== "";
       }
       return $.trim($field.val() || "") !== "";
     }
 
     function syncActive($field) {
       const $wrapper = $field.closest(".form-input__item-wrapper");
-      if (isFilled($field) || $field.is(":focus")) {
+      const isFilledResult = isFilled($field);
+      const isFocusResult = $field.is(":focus");
+
+      if (isFilledResult || isFocusResult) {
         $wrapper.addClass("active");
       } else {
         $wrapper.removeClass("active");
@@ -43,18 +48,21 @@
 
       if ($select.prop("selectedIndex") === 0) {
         $ns.removeClass("has-value");
-        $ns.find(".current").text("");
+        $ns.find(".current").text("Please select an option");
       } else {
         $ns.addClass("has-value");
-        $ns.find(".current").text($select.find("option:selected").text());
+        const selectedText = $select.find("option:selected").text();
+        $ns.find(".current").text(selectedText);
       }
     }
 
     $("select").each(function () {
       const $s = $(this);
-      if (!$s.next().hasClass("nice-select")) {
-        $s.niceSelect();
+      if ($s.next().hasClass("nice-select")) {
+        $s.next(".nice-select").remove();
       }
+      $s.hide();
+      $s.niceSelect();
       fixSelectPlaceholder($s);
       syncActive($s);
     });
@@ -66,13 +74,18 @@
 
     $form.on("input blur", "input, textarea", function () {
       syncActive($(this));
+      if (isFilled($(this))) {
+        $(this).closest(".form-input__item-wrapper").addClass("active");
+      }
     });
 
     $form.on("change", "select", function () {
-      const $sel = $(this);
-      fixSelectPlaceholder($sel);
-      syncActive($sel);
-      $sel.closest(".form-input__item").find(".form-input__error").removeClass("active");
+      fixSelectPlaceholder($(this));
+      syncActive($(this));
+      $(this).closest(".form-input__item").find(".form-input__error").removeClass("active");
+      if (isFilled($(this))) {
+        $(this).closest(".form-input__item-wrapper").addClass("active");
+      }
     });
 
     $form.on("focusin", ".nice-select", function () {
@@ -84,9 +97,11 @@
       const $select = $(this).prev("select");
       fixSelectPlaceholder($select);
       syncActive($select);
+      if (isFilled($select)) {
+        $select.closest(".form-input__item-wrapper").addClass("active");
+      }
     });
 
-    // ----------------- Submit -----------------
     $form.on("submit", function (e) {
       e.preventDefault();
       let ok = true;

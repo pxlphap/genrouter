@@ -1131,8 +1131,17 @@
     padding: 20px 16px 6px;
 }
 
+
+.form-input__item-wrapper .nice-select .current {
+    opacity: 0;
+}
+
 .form-input__item-wrapper.active .nice-select {
     padding: 20px 16px 6px;
+}
+
+.form-input__item-wrapper.active .nice-select .current {
+    opacity: 1;
 }
 
 .form-input .nice-select {
