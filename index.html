@@ -395,7 +395,7 @@
             </div>
         </div>
     </section>
-    <section class="section section-wcg">
+    <!-- <section class="section section-wcg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -497,7 +497,33 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
+
+<style>
+    @media screen and (max-width: 1200px) {
+        .circle {
+            max-height: calc(100vw / 2 + 50px);
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .section-more__item-content-inner {
+            min-width: 100%;
+        }
+
+        .section-more__item-title {
+            font-size: 24px;
+        }
+
+        .support-list__list li {
+            text-align: center;
+        }
+
+        .support-list__title {
+            transform: translateY(-50%);
+        }
+    }
+</style>
