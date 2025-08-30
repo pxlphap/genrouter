@@ -1125,6 +1125,7 @@
 
 .form-input__item-wrapper.active input {
     padding: 20px 16px 6px;
+    outline: none;
 }
 
 .form-input__item-wrapper.active textarea {
